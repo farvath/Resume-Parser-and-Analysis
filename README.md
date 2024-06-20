@@ -9,7 +9,7 @@ This application is built for employers looking for candidates against a particu
 3. **Integration with Generative AI Model:** The system is integrated with a Generative AI model (Gemini Model) to provide more comprehensive feedback and recommendations. This model can generate responses based on predefined prompts, offering insights into missing keywords, profile summaries, and recommended courses/resources.
 
 ## Modules 📦️
-1. **Text Embedding Module:** This module is responsible for transforming textual data into numerical representations, facilitating analysis and comparison. It leverages state-of-the-art NLP models such as [BERT](https://towardsdatascience.com/nlp-extract-contextualized-word-embeddings-from-bert-keras-tf-67ef29f60a7b) and [Doc2Vec](https://cs.stanford.edu/~quocle/paragraph_vector.pdf)to convert raw text into high-dimensional embeddings. Transformer-based model precisely 
+1. **Text Embedding Module:** This module is responsible for transforming textual data into numerical representations, facilitating analysis and comparison. It leverages state-of-the-art NLP models such as [BERT](https://towardsdatascience.com/nlp-extract-contextualized-word-embeddings-from-bert-keras-tf-67ef29f60a7b) and [Doc2Vec](https://cs.stanford.edu/~quocle/paragraph_vector.pdf) to convert raw text into high-dimensional embeddings. Transformer-based model precisely 
 [all-mpnet-base-v2]is used (https://huggingface.co/sentence-transformers/all-mpnet-base-v2), it captures contextualized embeddings that encode the semantic meaning of words and sentences. On the other hand, Doc2Vec generates fixed-size vectors representing entire documents, enabling efficient comparison of resumes and job descriptions. By utilizing these techniques, the Text Embedding Module ensures that textual information is translated into a format suitable for further analysis and evaluation within the application.
 
 2. **Cosine Similarity Module:** The [Cosine Similarity](https://developers.google.com/machine-learning/clustering/similarity/measuring-similarity) Module computes the similarity between pairs of embeddings using the cosine similarity metric. This metric measures the cosine of the angle between two vectors, providing a measure of their alignment in a high-dimensional space. By comparing the embeddings of resumes and job descriptions, this module determines the degree of match between a candidate's qualifications and the requirements of a job. 
@@ -25,7 +25,7 @@ This application is built for employers looking for candidates against a particu
 <img src = "images\data_flow.jpg">
 
 
-## Interface:
+## Interface
 <img src = "images\interface_1.jpg">
 <img src = "images\interface_2.jpg">
 <img src = "images\interface_3.jpg">
@@ -43,7 +43,7 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-3.  Geneate a private API key[Link](https://aistudio.google.com/app/apikey) and update the `.env` file . 
+3.  Geneate a private API key [Link](https://aistudio.google.com/app/apikey) and update the `.env` file . 
 
 4. Run the `app.py`
 ```bash
