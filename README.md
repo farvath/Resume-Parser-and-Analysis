@@ -43,7 +43,7 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-3.  Geneate a private API key [Link](https://aistudio.google.com/app/apikey) and update the `.env` file . 
+3.  Geneate a private API key [Link](https://aistudio.google.com/app/apikey) and update the key in `.env` file . 
 
 4. Run the `app.py`
 ```bash
