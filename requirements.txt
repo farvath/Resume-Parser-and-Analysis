@@ -1,0 +1,10 @@
+streamlit
+transformers
+torch
+pdfplumber
+nltk
+gensim
+scikit-learn
+pypdf
+google.generativeai
+python-dotenv
